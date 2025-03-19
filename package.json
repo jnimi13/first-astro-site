@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@fontsource-variable/roboto": "^5.2.5",
+    "@fontsource/merriweather": "^5.2.6"
+  }
+}

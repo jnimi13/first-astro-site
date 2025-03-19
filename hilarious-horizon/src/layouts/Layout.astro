@@ -1,0 +1,27 @@
+---
+import './src/styles/global.css';
+import './src/styles/styles.css';
+import '@fontsource/merriweather';
+import Header from "../components/Header.astro";
+// Supports weights 100-900
+import '@fontsource-variable/roboto';
+const { title, description ="A Community of music producers", image ="/images/band.jpg" } = Astro.props;
+
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description}>
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<meta property="og:image" content={image}>
+	</head>
+	<body class="">
+		<Header />
+		<slot />
+	</body>
+</html>

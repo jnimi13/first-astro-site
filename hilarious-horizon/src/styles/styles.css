@@ -1,0 +1,100 @@
+:root {
+    --primary-color: #2D232E;
+    --secondary-color: #534B52;
+    --tertiary-color: #474448;
+    --light-color: #E0DDCF;
+    --lighter-color: #F1F0EA;
+    --main-font: 'Merriweather', serif;
+    --navigation-font: 'Roboto Variable', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--lighter-color);
+    font-family: var(--main-font)
+}
+
+h1 {
+    font-size: 80px;
+}
+
+/*-- NAVIGATION CONFIGURATIONS --*/
+
+header {
+    padding: 20px 40px;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-family: var(--navigation-font);
+}
+
+nav > div {
+    display: flex;
+    align-items: center;
+
+}
+
+nav .logo {
+    justify-content: start;
+}
+
+nav .menu {
+    justify-content: center;
+}
+
+nav .buttons {
+    display: flex;
+    gap: 8px;
+    justify-content: end;
+}
+
+nav ul {
+    display: flex;
+    gap: 0 12px;
+}
+
+nav h3, nav a {
+    color: var(--primary-color);
+
+    &:hover {
+        color: var(--tertiary-color);
+    }
+}
+
+
+main {
+    width: 100%;
+}
+
+.wrapper {
+    padding: 40px;
+}
+
+/*-- BUTTON CONFIGURATIONS --*/
+
+.primary-btn {
+    background-color: var(--primary-color);
+    color: var(--lighter-color);
+
+    &:hover {
+        background-color: var(--light-color);
+        color: var(--primary-color);
+    }
+}
+
+.secondary-btn {
+    background-color: var(--secondary-color);
+    color: var(--lighter-color);
+
+    &:hover {
+        background-color: var(--light-color);
+        color: var(--primary-color);
+    }
+}
